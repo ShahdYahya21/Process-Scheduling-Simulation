@@ -1,7 +1,7 @@
-## Process Scheduling Simulation
+## Process Scheduling Simulation  
 
-### Overview
-This C++ program simulates various process scheduling algorithms. It allows the user to select a scheduling method and runs the simulation to compute waiting times and turnaround times for a set of predefined processes.
+### Overview 
+- This program demonstrates different process scheduling algorithms, allowing users to explore waiting and turnaround times for predefined processes.  
 ---
 ### Features
 - Simulates multiple scheduling algorithms:
