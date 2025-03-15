@@ -2,7 +2,7 @@
 
 ### Overview
 This C++ program simulates various process scheduling algorithms. It allows the user to select a scheduling method and runs the simulation to compute waiting times and turnaround times for a set of predefined processes.
-
+---
 ### Features
 - Simulates multiple scheduling algorithms:
   - **First Come First Served (FCFS)**
@@ -13,7 +13,7 @@ This C++ program simulates various process scheduling algorithms. It allows the 
   - **Non-Preemptive Priority Scheduling (with aging)**
 - Tracks important metrics such as waiting time and turnaround time.
 - Implements process queue management.
-
+---
 ### Program Structure
 #### 1. **Process Structure**
 Each process is represented by a `struct` named `process`, which contains attributes such as:
@@ -47,34 +47,34 @@ The user selects an option, and the corresponding scheduling algorithm is execut
 #### 4. **Scheduling Algorithms**
 Each scheduling method is implemented as a function:
 
-##### **First Come First Served (FCFS)**
+#### * **First Come First Served (FCFS)**
 - Executes processes in the order they arrive.
 - No preemption.
 
-##### **Shortest Job First (SJF)**
+#### * **Shortest Job First (SJF)**
 - Sorts processes by burst time.
 - Non-preemptive: Once a process starts, it runs to completion.
 
-##### **Shortest Remaining Time First (SRT)**
+#### * **Shortest Remaining Time First (SRT)**
 - Preemptive version of SJF.
 - A new process with a shorter burst time can interrupt the current one.
 
-##### **Round Robin (RR)**
+#### * **Round Robin (RR)**
 - Time-sharing scheduling with a fixed quantum (`q = 5`).
 - Processes take turns executing for a time slice before moving to the back of the queue.
 
-##### **Preemptive Priority Scheduling**
+#### * **Preemptive Priority Scheduling**
 - Higher priority processes can preempt lower-priority ones.
 - Aging: If a process waits too long, its priority decreases to prevent starvation.
 
-##### **Non-Preemptive Priority Scheduling**
+#### * **Non-Preemptive Priority Scheduling (with Aging)**
 - Similar to preemptive priority scheduling but does not allow interruption once a process starts.
 
 #### 5. **Performance Metrics**
 At the end of execution, the program calculates and displays:
 - Average waiting time
 - Average turnaround time
-
+---
 ### Program Output Example
 
 #### simulation of First Come First Served (FCFS):
